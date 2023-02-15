@@ -8,7 +8,6 @@ function Feed() {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    console.log('OZBBYY');
     fetchFromApi(`search?part=snippet&q=${selectedCategory}`).then((data) =>
       setVideos(data.items)
     );
@@ -43,7 +42,7 @@ function Feed() {
         >
           {selectedCategory} <span style={{ color: '#F31503' }}>Videos</span>
         </Typography>
-        <Videos videos={videos} />
+        <Videos justifyContent="flex-start" videos={videos} />
       </Box>
     </Stack>
   );

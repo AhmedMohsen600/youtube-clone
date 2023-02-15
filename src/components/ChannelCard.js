@@ -3,7 +3,7 @@ import { CheckCircle } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import { demoProfilePicture } from '../util/constant';
 
-function ChannelCard({ channelDetail }) {
+function ChannelCard({ channelDetail, marginTop }) {
   console.log('Channel data', channelDetail);
   return (
     <Box
@@ -16,6 +16,7 @@ function ChannelCard({ channelDetail }) {
         margin: 'auto',
         height: '320px',
         width: { xs: '356px', md: '320px' },
+        marginTop,
       }}
     >
       <Link to={`/channel/${channelDetail?.id?.channelId}`}>
@@ -30,7 +31,8 @@ function ChannelCard({ channelDetail }) {
         >
           <CardMedia
             image={
-              channelDetail.snippet.thumbnails.high.url || demoProfilePicture
+              channelDetail?.snippet?.thumbnails?.high?.url ||
+              demoProfilePicture
             }
             alt={channelDetail?.snippet?.title}
             sx={{
@@ -44,8 +46,19 @@ function ChannelCard({ channelDetail }) {
           />
           <Typography variant="h6">
             {channelDetail?.snippet?.title}
-            <CheckCircle sx={{ fontSize: 12, color: 'gray', ml: '5px' }} />
+            <CheckCircle sx={{ fontSize: 12, color: '#fff', ml: '5px' }} />
           </Typography>
+          {channelDetail?.statistics && (
+            <Typography
+              sx={{ fontSize: 12, color: 'gray', ml: '5px' }}
+              variant="h6"
+            >
+              {parseInt(
+                channelDetail?.statistics?.subscriberCount
+              ).toLocaleString('en-US')}{' '}
+              Subscribes
+            </Typography>
+          )}
         </CardContent>
       </Link>
     </Box>

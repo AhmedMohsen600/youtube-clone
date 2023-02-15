@@ -23,15 +23,15 @@ function VideoCard({
         borderRadius: 0,
       }}
     >
-      <Link to={videoId ? `/viedo/${videoId}` : demoVideoUrl}>
+      <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
         <CardMedia
           image={snippet?.thumbnails?.high?.url || demoProfilePicture}
           alt={snippet?.title}
-          sx={{ width: 358, height: 180 }}
+          sx={{ width: { xs: '100%' }, height: 180, objectFit: 'contain' }}
         />
       </Link>
       <CardContent sx={{ backgroundColor: '#1e1e1e', height: '106px' }}>
-        <Link to={videoId ? `/viedo/${videoId}` : demoVideoUrl}>
+        <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
           <Typography variant="subtitle1" fontWeight="bold" color="#FFF">
             {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}
           </Typography>
