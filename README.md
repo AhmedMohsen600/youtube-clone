@@ -23,7 +23,7 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 Shopping <a name="about-project"></a>
+# 📖 Youtube-clone <a name="about-project"></a>
 
 > In this project, youtube clone is being build. The Rapied API used for videos, channels, channel details, video details, and search Meals and its details is [MealsDB API](https://www.themealdb.com/api.php). The webapp have 3 user interfaces(Feed page, channel details, video details)
 
