@@ -25,7 +25,7 @@
 
 # 📖 Youtube-clone <a name="about-project"></a>
 
-> In this project, youtube clone is being build. The Rapied API used for videos, channels, channel details, video details, and search Meals and its details is [MealsDB API](https://www.themealdb.com/api.php). The webapp have 3 user interfaces(Feed page, channel details, video details)
+> In this project, youtube clone is being build. The Rapied API used for videos, channels, channel details, video details, Recommended videos , and search video and its details is [Rapid API](https://rapidapi.com/hub). The webapp have 3 user interfaces(Feed page, channel details, video details)
 
 - A feed page showing a list of videos that you can discover."
 - A channel details showing a list of videos belonging to a specific channel.
@@ -60,6 +60,7 @@ Click [here](https://www.loom.com/share/5585c6bce3a447fcb393cbd186be8d19) to wat
 - **Develop webapp around an Rapid API**
 - **Conduct test to ensure all edge cases are covered**
 - **Filter videos category**
+- **User get the recommended videos**
 - **User can play the video and see the recommneded videos for such a video**
 - **Users can search about a specific video**
 
