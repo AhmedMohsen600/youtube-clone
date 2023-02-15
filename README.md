@@ -94,7 +94,7 @@ https://github.com/AhmedMohsen600/youtube-clone.git
 -Type git clone in the terminal, paste the URL you copied earlier, and press "enter" to create your local clone.
 
 ```
-$ git clone https://github.com/AhmedMohsen600/shopping.git
+$ git clone https://github.com/AhmedMohsen600/youtube-clone.git
 ```
 
 # Install Dependencies(with following Command)
