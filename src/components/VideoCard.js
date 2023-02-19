@@ -27,7 +27,7 @@ function VideoCard({
         <CardMedia
           image={snippet?.thumbnails?.high?.url || demoProfilePicture}
           alt={snippet?.title}
-          sx={{ width: { xs: '100%', sm: '358px' }, height: 180 }}
+          sx={{ width: { xs: '100%', sm: '358px', md: '320px' }, height: 180 }}
         />
       </Link>
       <CardContent sx={{ backgroundColor: '#1e1e1e', height: '106px' }}>
@@ -44,7 +44,7 @@ function VideoCard({
           }
         >
           <Typography variant="subtitle1" fontWeight="bold" color="gray">
-            {snippet?.channelTitle.slice(0, 60) ||
+            {snippet?.channelTitle?.slice(0, 60) ||
               demoChannelTitle.slice(0, 60)}
             <CheckCircle sx={{ fontSize: 12, color: 'gray', ml: '5px' }} />
           </Typography>

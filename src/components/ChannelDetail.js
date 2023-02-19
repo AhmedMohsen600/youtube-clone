@@ -19,7 +19,6 @@ function ChannelDetail() {
       }
     );
   }, [id]);
-  console.log('hell', channelDetails);
   return (
     <Box minHeight="95vh">
       <Box>

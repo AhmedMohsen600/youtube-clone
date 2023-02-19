@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { demoProfilePicture } from '../util/constant';
 
 function ChannelCard({ channelDetail, marginTop }) {
-  console.log('Channel data', channelDetail);
   return (
     <Box
       sx={{

@@ -17,7 +17,3 @@ export const fetchFromApi = async (url) => {
   const { data } = await axios.get(`${BASE_URL}/${url}`, options);
   return data;
 };
-
-// relatedToVideoId: "7ghhRHRP6t4",
-// part: "id,snippet",
-// type: "video",
